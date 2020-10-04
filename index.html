@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Web Design</a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+        <div class="content">
+            <div class="contentbox">
+                <h2>Future <br>your Hand</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore aliquid, quas ducimus placeat cumque quisquam tenetur, ratione non quo odit, dolor quod iusto eius ipsam reprehenderit exercitationem quaerat incidunt minima quam perferendis ut? Ut accusamus fuga laboriosam sunt, velit rem, excepturi atque id deleniti voluptates eius aliquam harum tenetur.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="imgbox">
+                <img src="img/watch.png" alt="watch">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"/a></li>
+            <li><a href="#"><img src="img/twitter.png"/a></li>
+            <li><a href="#"><img src="img/instagram.png"/a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+
+
+
+    <script type="text/javascript">
+    function toggle(){
+        const toggle = document.querySelector('.toggle');
+        const banner = document.querySelector('.banner');
+        toggle.classList.toggle('active')
+        banner.classList.toggle('active')
+    }
+    </script>
+</body>
+</html>
